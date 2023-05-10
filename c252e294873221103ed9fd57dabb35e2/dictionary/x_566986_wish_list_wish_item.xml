@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="71f22218873221103ed9fd57dabb3512" label="Wish Item" max_length="40" name="x_566986_wish_list_wish_item" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="Item" mandatory="true" max_length="40" name="item" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Item" mandatory="true" max_length="40" name="item" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
         <element attributes="encode_utf8=false" label="Requestor" mandatory="true" max_length="32" name="requestor" reference="sys_user" type="reference"/>
+        <element label="URL" max_length="1024" name="url" type="url"/>
         <index name="index">
             <element name="requestor"/>
         </index>
